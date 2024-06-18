@@ -199,7 +199,7 @@ censored items times the log complementary cumulative distribution function
 been added to the target log density one at a time,
 
 ```stan
-for (n in 1:N)
+for (n in 1:N_cens)
   target += exponential_lccdf(t_cens | lambda);
 ```
 
